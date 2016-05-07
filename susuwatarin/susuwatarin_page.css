@@ -1,7 +1,6 @@
 /*基礎設定*/
 * {
-	width: 100%
-	margin:0 auto;
+	margin:0;
 	padding:0;
 }
 
@@ -32,52 +31,49 @@ body{
 
 .header {
     background: #fff;
-    height: 5rem;
+    height: 80px;
     box-shadow: 0 1px 4px rgba(0,0,0,.15);
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    line-height: 80px;
 }
 
 .header1{
-	margin: 20px 40px;
+	margin: 0 40px;
 }
 
 .directory{
-	margin: 100px;
+	margin-top: 80px;
 }
 
 .maintitle{
-	margin: 0 10% 0;
-	border-radius: 2px;
-	border: 1px solid #f9f9f9;
+	margin: 0 8%;
+	padding-top: 10px;
+	padding-bottom: 5px;
+
 }
 
 .title{
-	text-align: left;
 	font-size: 26px;
-	padding: 1px 20px;
 }
 
 .card{
 	background-color: #fff;
-    border-radius: .25rem;
+    border-radius: 3px;
     box-shadow: 0 1px 0 rgba(0,0,0,.25);
-    padding: 2rem 2rem 1rem;
-    margin: 0 10% 2rem;
-    position: relative;
+    padding: 15px;
+    margin: 0 8%;
     border: 1px solid #e8e8e8;
 }
 
 .info{
 	background-color: white;
-	background-clip: padding-box;
 }
 
 .maininfo{
 	text-align: center;
-	margin: auto;
 }
 
 .name{
@@ -86,19 +82,18 @@ body{
 
 .belong{
 	font-size: 14px;
-	padding: 5px;
-	padding-bottom: 20px;
+	padding-top: 5px;
+	padding-bottom: 10px;
 }
 
 .hr1{
 	size: 1px #000000;
-	width: 500px;
-	padding: 0;
-	margin: auto;
+	width: 70%;
+	margin:0 auto;
 }
 
 .subinfo{
-	padding: 20px;
+	padding: 15px;
 }
 
 .table{
