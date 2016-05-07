@@ -1,0 +1,121 @@
+/*基礎設定*/
+* {
+	width: 100%
+	margin:0 auto;
+	padding:0;
+}
+
+/*linkの設定*/
+a:link{
+	color: #000000;
+	text-decoration: none;
+}
+a:visited{
+	color: #000000;
+	text-decoration: none;
+}
+a:hover{
+	color: #70b7ff;
+	text-decoration: underline;
+}
+a:active{
+	color: #7070ff;
+}
+
+
+body{
+	line-height:1.4;
+	color: #333;
+	background-color: #f9f9f9;
+	font-family: Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+
+
+.header {
+    background: #fff;
+    height: 5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header1{
+	margin: 20px 40px;
+}
+
+.directory{
+	margin: 100px;
+}
+
+.maintitle{
+	margin: 0 10% 0;
+	border-radius: 2px;
+	border: 1px solid #f9f9f9;
+}
+
+.title{
+	text-align: left;
+	font-size: 26px;
+	padding: 1px 20px;
+}
+
+
+.card{
+/*	width: 600px;*/
+	background-color: #fff;
+    border-radius: .25rem;
+    box-shadow: 0 1px 0 rgba(0,0,0,.25);
+    padding: 2rem 2rem 1rem;
+    margin: 0 10% 2rem;
+    position: relative;
+    border: 1px solid #e8e8e8;
+}
+
+.info{
+	background-color: white;
+	background-clip: padding-box;
+}
+
+.maininfo{
+	text-align: center;
+	margin: auto;
+}
+
+.name{
+	font-size: 21px;
+}
+
+.belong{
+	font-size: 14px;
+	padding: 5px;
+	padding-bottom: 20px;
+}
+
+
+
+.hr1{
+	size: 1px #000000;
+	width: 500px;
+	padding: 0;
+	margin: auto;
+}
+
+.subinfo{
+	padding: 20px;
+}
+
+.table{
+	margin:0 auto;
+}
+
+
+.description{
+	color: #c0c0c0;
+}
+
+.property{
+	padding-left: 20%;
+}
+
