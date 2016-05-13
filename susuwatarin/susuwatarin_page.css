@@ -1,4 +1,4 @@
-**********
+/**********
 
 初期化
 
@@ -10,10 +10,20 @@
 
 /***********
 
+imageの設定
+
+***********/
+img.myimage {
+  margin: 0 auto;
+  width: 360px;
+  height: 360px;
+}
+
+/***********
+
 Linkの設定
 
 ***********/
-
 a:link {
   color: #000;
   text-decoration: none;
@@ -30,12 +40,27 @@ a:active {
   color: #7070ff;
 }
 
+a.slacklink:link {
+  color: #000;
+  text-decoration: none;
+}
+a.slacklink:visited {
+  color: #000;
+  text-decoration: none;
+}
+a.slacklink:hover {
+  color: #000;
+  text-decoration: underline;
+}
+a.slacklink:active {
+  color: #000;
+}
+
 /***********
 
 body
 
 ***********/
-
 body {
   background-color: #f9f9f9;
   color: #333;
@@ -48,101 +73,86 @@ body {
 header
 
 ***********/
-  .header {
-    background: #fff;
-    box-shadow: 0 1px 4px rgba(0,0,0,.15);
-    height: 80px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    line-height: 80px;
-    width: 100%;
+.header {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.15);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  line-height: 80px;
+  width: 100%;
+}
+  .teamname {
+    margin: 0 40px;
   }
-    .teamname {
-      margin: 0 40px;
-    }
 
 /***********
 
 directory title
 
 ***********/
-  .directory {
-  	margin: 80px auto 0;
-  	padding: 40px 10px;
+.directory {
+  margin: 80px auto 0;
+  padding: 40px 10px;
+}
+  .maintitle {
+    padding: 0 20px;
   }
-    .maintitle {
-      padding: 0 20px;
-    }
-      .title {
-        font-size: 30px;
-      }
+  .title {
+    font-size: 30px;
+  }
 
 /***********
 
 infocard
 
 ***********/
-	.info {
-		padding: 0 20px;
-	}
-	  .infocard {
-	    background-color: #fff;
-	    border: 1px solid #e8e8e8;
-	    border-radius: 3px;
-	    box-shadow: 0 1px 0 rgba(0,0,0,.25);
-	    padding: 30px;
-	  }
+.info {
+  padding: 0 20px;
+}
+  .infocard {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.25);
+    padding: 30px;
+  }
 
-	  .infocard_column{
+    .infocard_column{}
+      .maininfo {
+        text-align: center;
+      }
+        .name {
+          font-size: 21px;
+        }
+        .belong {
+          font-size: 14px;
+          padding-top: 5px;
+          padding-bottom: 10px;
+        }
 
-	  }
-	  .maininfo {
-	    text-align: center;
-	  }
-	    .name {
-	      font-size: 21px;
-		}
-		.belong {
-		  font-size: 14px;
-		  padding-top: 5px;
-		  padding-bottom: 10px;
-		}
+      hr {
+        border: none;
+        border-bottom: 1px solid #e8e8e8;
+        margin: 10px auto 0;
+      }
 
-	  hr {
-	  	border: none;
-	  	border-bottom: 1px solid #e8e8e8;
-	  	margin: 10px auto 0;
-	  }
-
-	  .subinfo {
-	  	padding: 15px 0;
+      .subinfo {
+        padding: 15px 0;
 	  }
 	    table {
-	      table-layout: fixed;
-	      margin: 0 auto 0;
-	      width: 100%;
-	    }
-	      .description {
-	      	color: #c0c0c0;
-	      	width: 40%;
-	      }
-	      .property {
-	      }
+          table-layout: fixed;
+          margin: 0 auto 0;
+          width: 100%;
+        }
+          .description {
+            color: #c0c0c0;
+            width: 40%;
+          }
+          .property {
 
-/***********
-
-image
-
-***********/
-
-img.myimage {
-  margin: 0 auto;
-  width: 360px;
-  height: 360px;
-}
-
-
+          }
 
 /***********
 
@@ -154,39 +164,32 @@ Media Queries
   	margin: 10px auto;
   	width: 960px;
   }
-
   .infocard_column {
     margin: 0 auto;
     width: 540px;		
   }
-
   hr {
     margin: 10px auto 0;
     width: 100%;
   }
-
   img.myimage {
   	margin: 0 auto;
   	width: 360px;
   	height: 360px;
   }
 }
-
 
 @media screen and (max-width: 1024px) and (min-width: 678px){
   .info, .maintitle {
   	margin: 10px auto;
   }
-
   .infocard_column {
   	margin: 0 auto;
   	width: 540px;
   }
-
   hr {
   	margin: 10px auto 0;
   }
-
   img.myimage {
   	margin: 0 auto;
   	width: 360px;
@@ -194,16 +197,15 @@ Media Queries
   }
 }
 
-
-
 @media screen and (max-width: 678px) {
-
-
+  .info, .maintitle {
+  	margin: 10px auto;
+  }
   img.myimage {
-  	margin: 0 auto;
-  	width: 80%;
-  	height: 80%;
-  	max-width: 360px;
-  	max-height: 360px;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    max-width: 360px;
+    max-height: 360px;
   }
 }
