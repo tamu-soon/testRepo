@@ -169,7 +169,6 @@ Media Queries
     width: 540px;		
   }
   hr {
-    margin: 10px auto 0;
     width: 100%;
   }
   img.myimage {
@@ -187,9 +186,6 @@ Media Queries
   	margin: 0 auto;
   	width: 540px;
   }
-  hr {
-  	margin: 10px auto 0;
-  }
   img.myimage {
   	margin: 0 auto;
   	width: 360px;
@@ -200,6 +196,10 @@ Media Queries
 @media screen and (max-width: 678px) {
   .info, .maintitle {
   	margin: 10px auto;
+  }
+  .infocard_column {
+    margin: 0 auto;
+    max-width: 540px;
   }
   img.myimage {
     margin: 0 auto;
