@@ -14,9 +14,9 @@ imageの設定
 
 ***********/
 img.myimage {
+  height: 360px;
   margin: 0 auto;
   width: 360px;
-  height: 360px;
 }
 
 /***********
@@ -172,9 +172,9 @@ Media Queries
     width: 100%;
   }
   img.myimage {
-  	margin: 0 auto;
-  	width: 360px;
-  	height: 360px;
+    height: 360px;
+    margin: 0 auto;
+    width: 360px;
   }
 }
 
@@ -187,9 +187,9 @@ Media Queries
   	width: 540px;
   }
   img.myimage {
-  	margin: 0 auto;
-  	width: 360px;
-  	height: 360px;
+    height: 360px;
+    margin: 0 auto;
+    width: 360px;
   }
 }
 
@@ -202,10 +202,10 @@ Media Queries
     max-width: 540px;
   }
   img.myimage {
-    margin: 0 auto;
-    width: 80%;
     height: 80%;
+    margin: 0 auto;
     max-width: 360px;
     max-height: 360px;
+    width: 80%;
   }
 }
