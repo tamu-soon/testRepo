@@ -111,7 +111,8 @@ infocard
 .info {
   padding: 0 20px;
 }
-  .infocard {
+
+.infocard {
     background-color: #fff;
     border: 1px solid #e8e8e8;
     border-radius: 3px;
@@ -149,9 +150,6 @@ infocard
           .description {
             color: #c0c0c0;
             width: 40%;
-          }
-          .property {
-
           }
 
 /***********
