@@ -82,7 +82,6 @@ foreach ($obj as $i => $val1) {
       foreach ($val1 as $j => $val2) {
         foreach ($val2 as $k => $val3) {
           if ($k === "teacher_name") {
-            $x = 0++;
             echo "担当教師：".$val3."\n";
           };
         };
