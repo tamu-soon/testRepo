@@ -77,16 +77,30 @@ echo "学期：".$obj->classes_detail[0]->term."\n";
 
 //問3:担当教師(全員)をechoで表示
 //ヒント:foreach使う！
-foreach ($obj as $i => $val1) {
-    if ($i === "teachers") {
-      foreach ($val1 as $j => $val2) {
-        foreach ($val2 as $k => $val3) {
-          if ($k === "teacher_name") {
-            echo "担当教師：".$val3."\n";
-          };
-        };
-      };
-    };
-};
+
+/**********
+ 僕の遺産として残します
+*********/
+
+// foreach ($obj as $i => $val1) {
+//     if ($i === "teachers") {
+//       foreach ($val1 as $j => $val2) {
+//         foreach ($val2 as $k => $val3) {
+//           if ($k === "teacher_name") {
+//             echo "担当教師：".$val3."\n";
+//           };
+//         };
+//       };
+//     };
+// };
+
+/******
+こっちのがよい
+*******/
+
+foreach ($obj->teachers as $value) {
+    echo $value->teacher_name."";
+}
+
 
 ?>
