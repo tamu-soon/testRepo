@@ -36,7 +36,8 @@ img{
 #Mayu{
   width: 340px;
   height: 460px;
-  -webkit-transform:translateX(140px);
+  -webkit-transform:translateX(100px);
+  
 }
 
 a:link{color:black}
