@@ -73,7 +73,11 @@ echo "\n";
 echo "授業名：".$obj->class_name.$obj->class_no."\n";
 
 //問2:授業の学期をechoで表示
-echo "学期：".$obj->classes_detail[0]->term."\n";
+
+foreach ($obj->classes_detail as $classes_detail) {
+    echo "学期：".$classes_detail->term."\n";
+}
+
 
 //問3:担当教師(全員)をechoで表示
 //ヒント:foreach使う！
@@ -99,7 +103,7 @@ echo "学期：".$obj->classes_detail[0]->term."\n";
 *******/
 
 foreach ($obj->teachers as $value) {
-    echo $value->teacher_name."";
+    echo "教師：".$value->teacher_name."\n";
 }
 
 
