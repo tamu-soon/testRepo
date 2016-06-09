@@ -106,5 +106,3 @@ foreach ($obj->teachers as $value) {
     echo "教師：".$value->teacher_name."\n";
 }
 
-
-?>
