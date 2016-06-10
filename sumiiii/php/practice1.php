@@ -10,7 +10,8 @@
         echo '<span style="color:red;">'. $num.'</span>';
       }
       else{
-        echo '<span style="color:blue;">'. $num.'</span>';      }
+        echo '<span style="color:blue;">'. $num.'</span>';
+      }
     }
     ?>
   </body>
