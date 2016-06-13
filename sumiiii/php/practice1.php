@@ -4,14 +4,15 @@
     <?php
     for($num=1;$num<=100;$num++){
       if($num%6==0 and $num%2==0){
-        echo '<span style="color:green;">'. $num.'</span>';
+        $color=green;
       }
       elseif($num%2==0){
-        echo '<span style="color:red;">'. $num.'</span>';
+        $color=red;
       }
       else{
-        echo '<span style="color:blue;">'. $num.'</span>';
+        $color=blue;
       }
+      echo '<span style="color:'.$color.';">'.$num.'</span>';
     }
     ?>
   </body>
