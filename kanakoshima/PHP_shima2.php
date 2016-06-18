@@ -73,14 +73,14 @@ echo "$obj->class_name<br>" ;
 //
 //echo $obj->classes_detail[0]->term ;
 //
-foreach($obj->classes_detail as $c_eachinfo){
-  echo "$c_eachinfo->term<br>" ;
+foreach($obj->classes_detail as $class_detail){
+  echo "$class_detail->term<br>" ;
 }
 
 //問3:担当教師(全員)をechoで表示
 //
 // var_dump($obj->teachers);
 //
-foreach($obj->teachers as $t_eachinfo){
-  echo "$t_eachinfo->teacher_name<br>" ;
+foreach($obj->teachers as $teacher){
+  echo "$teacher->teacher_name<br>" ;
 }
