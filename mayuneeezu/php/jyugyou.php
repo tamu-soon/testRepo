@@ -77,7 +77,7 @@ foreach ($obj->classes_detail as $value) {
 
 //問3:担当教師(全員)をechoで表示
 //ヒント:foreach使う！
-foreach ($obj->teachers as $key => $value) {
+foreach ($obj->teachers as $value) {
   echo $value->teacher_name;
 }
 
